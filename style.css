@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #121212; /* Dark background for a sleek look */
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(5px); /* Optional: Add blur to make text more readable */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust background color as needed */
+}
+.profile-container {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    padding: 20px; /* Add some padding around the container */
+}
+
+.profile-picture {
+    width: 150px !important; /* Set the width of the image */
+    height: 150px !important; /* Set the height of the image */
+    border-radius: 50% !important; /* Optional: make the image circular */
+}
+
+.profile-name {
+    font-size: 24px; /* Set the font size of the name */
+    margin: 0; /* Remove default margin from h1 */
+}
+
+.spacer {
+    flex-grow: 1; /* This makes the spacer div grow to take up available space, pushing the image to the right */
+}
+
+h1 {
+    color: #FFD700; /* Adjust color as needed */
+    font-size: 2em; /* Adjust font size as needed */
+}
+
+header h1 {
+    margin: 0;
+    color: #FFD700; /* Gold color for your name */
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #FFD700; /* Gold color for section headers */
+    border-bottom: 2px solid #FFD700; /* Gold underline for section headers */
+}
+
+p, li {
+    line-height: 1.6;
+}
+
+a {
+    color: #1E90FF; /* Bright blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+h2 {
+    margin-top: 0;
+    padding: 10px;
+    color: #FFD700; /* Gold color for section headers */
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background for headers */
+    border-bottom: 2px solid #FFD700; /* Gold underline for section headers */
+    border-radius: 5px; /* Rounded corners for headers */
+    text-align: center; /* Center-aligned text */
+    font-size: 1.5em; /* Slightly larger font size */
+}
+
+
+.job-description {
+    cursor: pointer;
+    font-style: italic;
+    font-size: 0.9em;
+    color: #FFD700;
+}
+
+.education-entry {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #444; /* Light border around each education entry */
+    border-radius: 5px; /* Rounded corners for education entries */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.education-entry:hover {
+    transform: scale(1.05); /* Slightly enlarge the education entry on hover */
+    box-shadow: 0px 0px 15px 1px rgba(255, 215, 0, 0.75); /* Add a gold glow around the education entry */
+}
+
+.education-entry h3 {
+    color: #FF4500; /* Orange color for education institution names */
+    margin-top: 10px;
+    font-size: 1.2em; /* Larger font size for education institution names */
+}
+
+
+.job {
+    position: relative;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #444; /* Light border around each job */
+    border-radius: 5px; /* Rounded corners for job sections */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.job:hover {
+    transform: scale(1.05); /* Slightly enlarge the job section on hover */
+    box-shadow: 0px 0px 15px 1px rgba(255, 215, 0, 0.75); /* Add a gold glow around the job section */
+}
+
+.job h3 {
+    color: #FF4500; /* Orange color for job titles */
+    margin-top: 10px;
+    font-size: 1.2em; /* Larger font size for job titles */
+}
+
+.job img {
+    display : none;
+    width: 100%; /* Make image fill the width of the .job section */
+    border-radius: 4px; /* Optional: rounded corners for images */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.job ul {
+    list-style: none; /* Remove default list styling */
+}
+
+.job ul li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+.bullet-list {
+    list-style-type: disc !important;
+    list-style-position: inside !important;
+    padding-left: 20px !important;
+    margin: 0 !important;
+}
+
+.bullet-list li {
+    margin-bottom: 10px !important;
+    padding-left: 15px !important;
+}
+
+ul li {
+    list-style-type: disc !important; /* Apply disc style to list items as well */
+}
+
+
+
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.3em; /* Adjust font size for smaller screens */
+    }
+    .job h3 {
+        font-size: 1em; /* Adjust job title font size for smaller screens */
+    }
+}
+
+/* ... (Other CSS rules) ... */
+
+/* Responsive design for different screen sizes */
+@media (max-width: 768px) {
+    header h1, h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+
+
